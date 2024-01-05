@@ -2,17 +2,15 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.CustomerInterfaceController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerInterfaceController">
    <children>
-      <ListView layoutX="232.0" layoutY="88.0" prefHeight="257.0" prefWidth="324.0" />
-      <ListView layoutX="48.0" layoutY="88.0" prefHeight="257.0" prefWidth="166.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="231.0" layoutX="229.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="231.0" layoutX="45.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
@@ -24,8 +22,22 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button layoutX="48.0" layoutY="355.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="backBtn" layoutX="48.0" layoutY="355.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
       <Label layoutX="55.0" layoutY="64.0" text="Apply History" />
       <Label layoutX="232.0" layoutY="64.0" text="Apply Job" />
+      <Button fx:id="lihatBtn" layoutX="488.0" layoutY="104.0" mnemonicParsing="false" onAction="#lihatClick" text="Lihat" />
+      <Label layoutX="259.0" layoutY="108.0" text="Wesbsite Designer" />
+      <Label layoutX="259.0" layoutY="161.0" text="UI/UX Designer" />
+      <Button layoutX="488.0" layoutY="157.0" mnemonicParsing="false" text="Lihat" />
+      <Label layoutX="259.0" layoutY="216.0" text="Social Media Specialist" />
+      <Label layoutX="259.0" layoutY="270.0" text="Accountant" />
+      <Button layoutX="488.0" layoutY="212.0" mnemonicParsing="false" text="Lihat" />
+      <Button layoutX="488.0" layoutY="266.0" mnemonicParsing="false" text="Lihat" />
+      <Label layoutX="69.0" layoutY="108.0" text="Data analyst" />
+      <Label layoutX="69.0" layoutY="129.0" text="Status: -" />
+      <Label layoutX="69.0" layoutY="163.0" text="Software Developer" />
+      <Label layoutX="69.0" layoutY="184.0" text="Status: -" />
+      <Label layoutX="69.0" layoutY="218.0" text="Backend Developer" />
+      <Label layoutX="69.0" layoutY="239.0" text="Status: -" />
    </children>
 </AnchorPane>

@@ -27,12 +27,13 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class database {
-    private Connection con;
+
+    public Connection con;
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     Date date2 = null;
     
-    public void connect() {
-        String url = "jdbc:mysql://localhost:3306/Loker";
+    public void con() {
+        String url = "jdbc:mysql://localhost:3306/uas";
         String username = "root";
         String password = "Azh@#195#*";
         try {
@@ -43,6 +44,10 @@ public class database {
         } catch (SQLException ex){
             System.out.println("gagal konek");
         }
+    }
+    
+    public Connection getConnection(){
+        return con;
     }
     
     public void saveBerkas(int idPelamar, List<String> skill){

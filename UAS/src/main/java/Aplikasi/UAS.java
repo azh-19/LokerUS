@@ -9,6 +9,7 @@ package Aplikasi;
  * @author Azhar Nurulhaifa
  */
 
+import java.sql.SQLException;
 import koneksi.database;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,9 +25,9 @@ public class UAS {
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     private static int idSkill;
     
-    public UAS() {
+    public UAS() throws SQLException {
         db = new database();
-        db.connect();
+        db.con();
         daftarPerusahaan = new ArrayList();
         daftarPelamar = new ArrayList();
         skill = new ArrayList();

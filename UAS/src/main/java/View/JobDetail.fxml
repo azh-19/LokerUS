@@ -9,8 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.JobDetailController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.JobDetailController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0">
          <fill>
@@ -23,17 +22,17 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <TextArea layoutX="41.0" layoutY="169.0" prefHeight="170.0" prefWidth="247.0" />
-      <TextArea layoutX="320.0" layoutY="169.0" prefHeight="170.0" prefWidth="247.0" />
+      <TextArea layoutX="41.0" layoutY="169.0" prefHeight="170.0" prefWidth="247.0" text="Kami sedang mencari seorang website &#10;designer yang kreatif untuk bergabung &#10;dengan tim kami." />
+      <TextArea layoutX="320.0" layoutY="169.0" prefHeight="170.0" prefWidth="247.0" text="1 Berkolaborasi dengan tim&#10;2. Menguasai kode pemrograman HTML,&#10;CSS, dan Javascript&#10;3. Detail dan kreatif" />
       <Label layoutX="42.0" layoutY="144.0" text="Job Description" />
       <Label layoutX="320.0" layoutY="144.0" text="Criteria" />
-      <Label layoutX="41.0" layoutY="76.0" text="Position">
+      <Label layoutX="41.0" layoutY="76.0" prefHeight="27.0" prefWidth="176.0" text="Website Designer">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="103.0" text="Company name" />
-      <Button layoutX="492.0" layoutY="77.0" mnemonicParsing="false" text="Apply Now" />
-      <Button layoutX="41.0" layoutY="346.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="41.0" layoutY="103.0" text="PT. Firman Barokah" />
+      <Button fx:id="applyBtn" layoutX="492.0" layoutY="77.0" mnemonicParsing="false" onAction="#applyShow" text="Apply Now" />
+      <Button fx:id="backBtn" layoutX="41.0" layoutY="346.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
    </children>
 </AnchorPane>

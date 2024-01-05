@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,8 +9,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.BerkasController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BerkasController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="603.0">
          <fill>
@@ -23,16 +23,16 @@
          </fill>
       </Rectangle>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="263.0" layoutX="47.0" layoutY="88.0" stroke="WHITE" strokeType="INSIDE" width="509.0" />
-      <Button layoutX="47.0" layoutY="355.0" mnemonicParsing="false" text="Back" />
-      <Button layoutX="502.0" layoutY="355.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="backBtn" layoutX="47.0" layoutY="355.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
+      <Button fx:id="submitBtn" layoutX="502.0" layoutY="355.0" mnemonicParsing="false" onAction="#submitClick" text="Submit" />
       <TextField layoutX="90.0" layoutY="122.0" prefHeight="33.0" prefWidth="423.0" />
       <Label layoutX="47.0" layoutY="64.0" text="Personal Data" />
       <Label layoutX="90.0" layoutY="102.0" text="Full Name" />
-      <TextField layoutX="90.0" layoutY="182.0" prefHeight="33.0" prefWidth="423.0" />
       <Label layoutX="90.0" layoutY="162.0" text="Date of Birth" />
       <TextField layoutX="90.0" layoutY="242.0" prefHeight="33.0" prefWidth="423.0" />
       <Label layoutX="90.0" layoutY="221.0" text="Phone Number" />
       <TextField layoutX="90.0" layoutY="302.0" prefHeight="33.0" prefWidth="423.0" />
       <Label layoutX="90.0" layoutY="282.0" text="Skill" />
+      <DatePicker layoutX="90.0" layoutY="182.0" prefHeight="33.0" prefWidth="423.0" />
    </children>
 </AnchorPane>

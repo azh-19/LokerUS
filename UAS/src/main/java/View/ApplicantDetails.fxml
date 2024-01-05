@@ -7,8 +7,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.ApplicantDetailsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ApplicantDetailsController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
          <fill>
@@ -24,8 +23,8 @@
       <Label layoutX="140.0" layoutY="138.0" prefHeight="27.0" prefWidth="148.0" text="Applicant's Name" />
       <Label layoutX="140.0" layoutY="195.0" text="Phone Number" />
       <Label layoutX="140.0" layoutY="170.0" text="Date of Birth" />
-      <Button layoutX="140.0" layoutY="244.0" mnemonicParsing="false" text="Back" />
-      <Button layoutX="343.0" layoutY="244.0" mnemonicParsing="false" text="Accept" />
-      <Button layoutX="404.0" layoutY="244.0" mnemonicParsing="false" text="Reject" />
+      <Button fx:id="backBtn" layoutX="140.0" layoutY="244.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
+      <Button fx:id="acceptBtn" layoutX="343.0" layoutY="244.0" mnemonicParsing="false" onAction="#acceptInfo" text="Accept" />
+      <Button fx:id="rejectBtn" layoutX="404.0" layoutY="244.0" mnemonicParsing="false" onAction="#rejectClick" text="Reject" />
    </children>
 </AnchorPane>
