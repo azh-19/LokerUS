@@ -9,7 +9,7 @@ package Aplikasi;
  * @author Azhar Nurulhaifa
  */
 
-import koneksi.Database;
+import koneksi.database;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,12 +20,12 @@ public class UAS {
     private List<Pelamar> daftarPelamar = new ArrayList<>();
     private List<Perusahaan> daftarPerusahaan = new ArrayList();
     private List<String> skill = new ArrayList<>();
-    private Database db;
+    private database db;
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     private static int idSkill;
     
     public UAS() {
-        db = new Database();
+        db = new database();
         db.connect();
         daftarPerusahaan = new ArrayList();
         daftarPelamar = new ArrayList();

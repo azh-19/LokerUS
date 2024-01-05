@@ -26,7 +26,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-public class Database {
+public class database {
     private Connection con;
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     Date date2 = null;
