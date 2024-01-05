@@ -12,10 +12,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- *
- * @author Diah Ajeng
- */
 public class Konsol {
 
     UAS Aplikasi;
